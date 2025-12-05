@@ -1,0 +1,11 @@
+# Weak cipher tokens to flag
+SSLv2: [ 'sslv2' ]
+SSLv3: [ 'sslv3' ]
+TLS1.0: [ 'tls1', 'tlsv1', 'tls1.0' ]
+RC4: [ 'rc4' ]
+DES:
+  - 'des'
+  - '3des'
+  - 'des-cbc'
+NULL: [ 'null' ]
+EXPORT: [ 'export' ]

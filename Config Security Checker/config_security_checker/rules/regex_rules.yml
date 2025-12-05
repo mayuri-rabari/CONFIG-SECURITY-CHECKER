@@ -1,0 +1,12 @@
+# Example regex rules (editable)
+- name: Generic password assignment
+  pattern: '(?i)(?:password|passwd)\s*[:=]\s*["\']?([^\s"\'#]{6,200})["\']?'
+  score: 5
+
+- name: AWS Access Key
+  pattern: 'AKIA[0-9A-Z]{16}'
+  score: 6
+
+- name: AWS Secret Access Key
+  pattern: '(?i)aws_secret_access_key\s*[:=]\s*([A-Za-z0-9/+=]{8,128})'
+  score: 7
